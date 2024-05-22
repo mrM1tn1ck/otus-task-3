@@ -22,7 +22,6 @@ SCRIPT
 Vagrant.configure("2") do |config|
     # for all
     config.vm.synced_folder ".", "/vagrant"
-    # config.disksize.size = '30GB'
 
     config.vm.define "ansible" do |ansible|
         ansible.vm.box = "ubuntu/jammy64"
